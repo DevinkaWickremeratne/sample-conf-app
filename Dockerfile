@@ -10,7 +10,7 @@ RUN npm cache clean --force && \
 COPY . .
 
 ENV NEXT_TELEMETRY_DISABLED 1
-
+RUN ls -la
 RUN npm run build
 
 ENV NODE_ENV production
