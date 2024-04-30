@@ -1,6 +1,6 @@
 import axios, { AxiosResponse } from 'axios';
 
-const BASE_URL = process.env.NEXT_PUBLIC_REVIEW_MANAGEMENT_BASE_URL;
+const BASE_URL = process.env.REVIEW_MANAGEMENT_BASE_URL;
 
 export type ConferenceResponse = {
     id: number;
