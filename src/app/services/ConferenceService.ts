@@ -17,7 +17,7 @@ export type ConferenceResponse = {
 export const fetchAllConferences = async (
 ): Promise<ConferenceResponse[]> => {
     try {
-        console.log('Process Env Variables:', process.env);
+        console.log("BASE_URL", process.env.ASGARDEO_CLIENT_ID);
         const response: AxiosResponse<ConferenceResponse[]> = await axios.get(
             `${BASE_URL}/conferences`
         );
