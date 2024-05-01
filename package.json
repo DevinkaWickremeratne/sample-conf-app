@@ -9,7 +9,6 @@
     "format:check": "pretty-quick --check --ignore-path .gitignore .",
     "format:fix": "pretty-quick --write --ignore-path .gitignore .",
     "pre-commit": "next lint --fix -v && pretty-quick --staged",
-    "prepare": "husky install",
     "lint": "next lint"
   },
   "dependencies": {
@@ -21,7 +20,6 @@
     "flowbite-react": "^0.8.0",
     "heroicon": "^0.0.2",
     "heroicons-react": "^1.4.1",
-    "husky": "^9.0.11",
     "lottie-react": "^2.4.0",
     "luxon": "^3.4.4",
     "next": "14.2.1",
@@ -42,15 +40,5 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
-  },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
-    }
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }
